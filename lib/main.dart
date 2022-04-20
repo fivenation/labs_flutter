@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:labs_flutter/BLoCArchitecture.dart';
 import 'package:labs_flutter/ScopedModelArchitecture.dart';
 import 'package:labs_flutter/VanillaArchitecture.dart';
 
@@ -15,10 +16,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         colorSchemeSeed: Colors.blue,
       ),
-
-        /// HERE YOU CAN CHANGE EXAMPLE
+      // HERE YOU CAN CHANGE EXAMPLE
       //home: HomePageVanilla()
-      home: HomePageScopedModel()
+      //home: HomePageScopedModel()
+      home: HomePageBloc()
     );
   }
 }
