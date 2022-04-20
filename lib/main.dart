@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:labs_flutter/Vanilla/HomePageVanilla.dart';
+import 'package:labs_flutter/Vanilla.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         colorSchemeSeed: Colors.blue,
       ),
-      home: HomePageVanilla() /// HERE YOU CAN CHANGE PATTERN OF STATE ARCHITECTURE
+      home: HomePageVanilla() /// HERE YOU CAN CHANGE EXAMPLE
     );
   }
 }
