@@ -7,7 +7,7 @@ import 'package:labs_flutter/ModelPosts.dart';
 /// MODEL => STATEFUL WIDGET => STATE
 /// 1) Stateful widget HomePageVanilla has state - _posts;
 /// 2) State manages by setState() in function _initPosts();
-/// 3) Method _viewController manage UI components, depending on _posts;
+/// 3) Method _viewBuild manage UI components, depending on _posts;
 
 class HomePageVanilla extends StatefulWidget{
   HomePageVanilla({Key? key}) : super(key: key);

@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:labs_flutter/Vanilla.dart';
+import 'package:labs_flutter/ScopedModelArchitecture.dart';
+import 'package:labs_flutter/VanillaArchitecture.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,7 +15,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         colorSchemeSeed: Colors.blue,
       ),
-      home: HomePageVanilla() /// HERE YOU CAN CHANGE EXAMPLE
+
+        /// HERE YOU CAN CHANGE EXAMPLE
+      //home: HomePageVanilla()
+      home: HomePageScopedModel()
     );
   }
 }
